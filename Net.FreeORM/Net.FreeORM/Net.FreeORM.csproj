@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B1069154-5068-4E00-A89D-A2B0DCFE2A88}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Net.FreeORM</RootNamespace>
+    <AssemblyName>Net.FreeORM</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Framework\BaseDal\BaseDL.cs" />
+    <Compile Include="Framework\BaseDal\IBaseDL.cs" />
+    <Compile Include="Framework\Base\BaseBO.cs" />
+    <Compile Include="Framework\Base\IBaseBO.cs" />
+    <Compile Include="Framework\Core\Hashmap.cs" />
+    <Compile Include="Framework\DBConnection\Connection.cs" />
+    <Compile Include="Framework\DBConnection\ConnectionTypes.cs" />
+    <Compile Include="Framework\DBConnection\ExternalConnection.cs" />
+    <Compile Include="Framework\DBConnection\ExternalDbConnection.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Framework\DBConnection\IConnection.cs" />
+    <Compile Include="Framework\DBConnection\IConnectionOperations.cs" />
+    <Compile Include="Framework\DBConnection\NsConnection.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Framework\DBConnection\Property.cs" />
+    <Compile Include="Framework\Extensions\DataExtensions.cs" />
+    <Compile Include="Framework\Extensions\ObjectExtensions.cs" />
+    <Compile Include="Framework\QueryBuilding\IQueryBuilder.cs" />
+    <Compile Include="Framework\QueryBuilding\QueryBuilder.cs" />
+    <Compile Include="Framework\QueryBuilding\QueryFormat.cs" />
+    <Compile Include="Framework\QueryBuilding\QueryObject.cs" />
+    <Compile Include="Framework\QueryBuilding\QueryTypes.cs" />
+    <Compile Include="Framework\Util\ConfUtil.cs" />
+    <Compile Include="Framework\Util\PropertyUtil.cs" />
+    <Compile Include="Framework\Util\SecurityUtil.cs" />
+    <Compile Include="Log\Error\FreeException.cs" />
+    <Compile Include="Log\Error\FreeLogger.cs" />
+    <Compile Include="Log\Error\Log.cs" />
+    <Compile Include="Log\Error\LogDL.cs" />
+    <Compile Include="Log\Error\LogTypes.cs" />
+    <Compile Include="Log\Error\SaveTypes.cs" />
+    <Compile Include="Log\Transaction\FreeTransactionLog.cs" />
+    <Compile Include="Log\Transaction\TransactionLogDL.cs" />
+    <Compile Include="Log\Transaction\TransactionTypes.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>rd /s /q "$(ProjectDir)obj\Debug"
+rd /s /q "$(ProjectDir)obj\Release"
+rd /s /q "$(ProjectDir)bin\Debug"
+rd /s /q "$(ProjectDir)bin\Release"
+rd /s /q "$(ProjectDir)bin\*"
+rd /s /q "$(ProjectDir)obj\*"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

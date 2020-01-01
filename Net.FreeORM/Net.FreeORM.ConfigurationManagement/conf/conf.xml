@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<appsettings>
+
+  <current-culture>tr-TR</current-culture>
+
+  <dblogin>
+    <db-properties>
+      <properties driver-type="sqlserver" name="mainOld" conn-str="Server=KRK\SQLEXPRESS; Initial Catalog=GuruTest;User Id=sa; Password=123123;">
+        <property key="eWRtVnlVMlYD" value="VEVWWVVGSkZVMU09UzFKTFhGTlII" />
+        <property key="d2dRMkYwWVd4dlp3PT1JRWx1YVhScFlXCg==" value="VlJsYzNRPVIzVnlkBQ==" />
+        <property key="MlZqZFhKcGRIa2dTVzVtYnc9PUlGQmxjbk5wYzNRZ1UN" value="MVpRPT1WSEoD" />
+        <property key="WElnU1dRPUlGVnpaBQ==" value="RT1jMgI=" />
+        <property key="M04zYjNKa0lGQmhjBQ==" value="ek1USXpNVEkD" />
+      </properties>
+      <properties driver-type="mysql" name="ext" conn-str="Server=KRK\SQLEXPRESS; Initial Catalog=GuruTest;User Id=sa; Password=123123;">
+        <property key="" value=""/>
+        <property key="" value=""/>
+        <property key="" value=""/>
+        <property key="" value=""/>
+        <property key="" value=""/>
+      </properties>
+    </db-properties>
+    <db-properties>
+      <properties name="main" driver-type="sqlite" conn-str="Data Source=Veri.mp3; Version=3; New=True; Compress=True; Password=DilkiDepesi;">
+        <property key="bVZ5VTJWeWQF" value="Rk5SVEVWWVVGSkZVMU09UzFKTFgF" />
+        <property key="WFJwWVd3Z1EyRjBZV3h2Wnc9PUlFbHVhBQ==" value="VlJsYzNRPVIzVnlkBQ==" />
+        <property key="WElnU1dRPUlGVnpaBQ==" value="MkU9YwU=" />
+        <property key="M04zYjNKa0lGQmhjBQ==" value="VEl6TVRJek0F" />
+      </properties>
+      <properties name="main1" driver-type="odbc" conn-str="Dsn=MsConn; uid=sa; pwd=123123; wsid=KRK; database=GuruTest">
+        <property key="bVZ5VTJWeWQF" value="Rk5SVEVWWVVGSkZVMU09UzFKTFgF" />
+        <property key="WFJwWVd3Z1EyRjBZV3h2Wnc9PUlFbHVhBQ==" value="VlJsYzNRPVIzVnlkBQ==" />
+        <property key="WElnU1dRPUlGVnpaBQ==" value="MkU9YwU=" />
+        <property key="M04zYjNKa0lGQmhjBQ==" value="VEl6TVRJek0F" />
+      </properties>
+      <properties name="main2" driver-type="odbc" conn-str="Dsn=MySQLConn; uid=root; pwd=123123; wsid=KRK; database=GuruTest;">
+        <property key="bVZ5VTJWeWQF" value="Rk5SVEVWWVVGSkZVMU09UzFKTFgF" />
+        <property key="WFJwWVd3Z1EyRjBZV3h2Wnc9PUlFbHVhBQ==" value="VlJsYzNRPVIzVnlkBQ==" />
+        <property key="WElnU1dRPUlGVnpaBQ==" value="MkU9YwU=" />
+        <property key="M04zYjNKa0lGQmhjBQ==" value="VEl6TVRJek0F" />
+      </properties>
+      <properties name="main3"  driver-type="sqlserver" conn-str="" >
+        <property key="U2VydmVy" value="S1JLXFNRTEVYUFJFU1M=" />
+        <property key="IEluaXRpYWwgQ2F0YWxvZw==" value="R3VydVRlc3Q=" />
+        <property key="VXNlciBJZA==" value="c2E=" />
+        <property key="IFBhc3N3b3Jk" value="MTIzMTIz" />
+      </properties>
+      <properties name="main4" driver-type="mysql" conn-str="Server=127.0.0.1;Database=GuruTest;Uid=root;Pwd=123123;">
+        <property key="bVZ5VTJWeWQF" value="Rk5SVEVWWVVGSkZVMU09UzFKTFgF" />
+        <property key="WFJwWVd3Z1EyRjBZV3h2Wnc9PUlFbHVhBQ==" value="VlJsYzNRPVIzVnlkBQ==" />
+        <property key="WElnU1dRPUlGVnpaBQ==" value="MkU9YwU=" />
+        <property key="M04zYjNKa0lGQmhjBQ==" value="VEl6TVRJek0F" />
+      </properties>
+      <properties name="main5" driver-type="sqlserver" conn-str="" >
+        <property key="eWRtVnlVMlYD" value="VEVWWVVGSkZVMU09UzFKTFhGTlII" />
+        <property key="d2dRMkYwWVd4dlp3PT1JRWx1YVhScFlXCg==" value="VlJsYzNRPVIzVnlkBQ==" />
+        <property key="MlZqZFhKcGRIa2dTVzVtYnc9PUlGQmxjbk5wYzNRZ1UN" value="MVpRPT1WSEoD" />
+        <property key="WElnU1dRPUlGVnpaBQ==" value="RT1jMgI=" />
+        <property key="M04zYjNKa0lGQmhjBQ==" value="ek1USXpNVEkD" />
+        <!-- Server=KRK\SQLEXPRESS; Initial Catalog=GuruTest;User Id=sa; Password=123123; -->
+      </properties>
+      <properties name="main6" driver-type="sqlserver" conn-str="Server=KRK\SQLEXPRESS;Initial Catalog=BuroTestDB;User Id=sa;Password=123123;" >
+        <property key="MlZ5ZG1WeVUB" value="MUpMWEZOUlRFVllVRkpGVTFNPVMB" />
+        <property key="RWx1YVhScFlXd2dRMkYwWVd4dlp3PT1JAQ==" value="M1Z5ZFZSbGMzUT1SAQ==" />
+        <property key="WE5sY2lCSlpBPT1WAQ==" value="MkU9YwE=" />
+        <property key="RkJoYzNOM2IzSmtJAQ==" value="VEl6TVRJek0B" />
+      </properties>
+      <properties name="ext" driver-type="sqlserver" conn-str="Server=KRK\SQLEXPRESS; Initial Catalog=GuruTest; User Id=sa; Password=123123;">
+        <property key="bVZ5VTJWeWQF" value="Rk5SVEVWWVVGSkZVMU09UzFKTFgF" />
+        <property key="WFJwWVd3Z1EyRjBZV3h2Wnc9PUlFbHVhBQ==" value="VlJsYzNRPVIzVnlkBQ==" />
+        <property key="WElnU1dRPUlGVnpaBQ==" value="MkU9YwU=" />
+        <property key="M04zYjNKa0lGQmhjBQ==" value="VEl6TVRJek0F" />
+      </properties>
+      <properties driver-type="sqlserver" name="ext2" conn-str="Server=KRK\SQLEXPRESS; Initial Catalog=BuroTestSB;User Id=sa; Password=123123;">
+        <property key="" value=""/>
+        <property key="" value=""/>
+        <property key="" value=""/>
+        <property key="" value=""/>
+        <property key="" value=""/>
+      </properties>
+    </db-properties>
+  </dblogin>
+
+
+  <appconfig>
+    <row-count>20</row-count>
+    <log-setting>
+      <save-type>db</save-type>
+      <log-type>file</log-type>
+      <log-path>C:\\FreeORM\\log\\log.txt</log-path>
+    </log-setting>
+    <picture-settings>
+      <picture-settings-folder>C:\\FreeORM\\picturedata\\</picture-settings-folder>
+    </picture-settings>
+  </appconfig>
+
+
+
+</appsettings>
